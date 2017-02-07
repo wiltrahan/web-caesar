@@ -31,9 +31,19 @@ def build_page(textarea_content):
             message_label + textarea + '<br>' +
             submit + "</form>")
 
-    header = "<h2>Web Caesar </h2>"
 
-    return header + form
+    title = """ <!DOCTYPE html>
+<html>
+<head>
+    <title>Web Caesar</title>
+
+</head>
+    """
+    header = "<h2><a href='/'>Web Caesar</a></h2>"
+
+
+
+    return title + header + form
 
 
 class MainHandler(webapp2.RequestHandler):
